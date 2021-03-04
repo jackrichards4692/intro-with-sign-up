@@ -1,0 +1,60 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: blue;
+}
+
+.half {
+  float: left;
+  width: 50%;
+}
+
+.left {
+  width: 350px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+.right {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+.blue-box {
+  color: lightgray;
+  background: blue;
+  background: hsl(248, 32%, 49%);
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  padding: 1px 0 1px 0;
+  border-radius: 5px;
+}
+
+p {
+  font-size: 0.7rem;
+}
+
+.form {
+  background-color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .half {
+    width: 100%;
+  }
+
+  .left {
+    padding-top: 0;
+    width: 250px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .right {
+    padding-top: 0;
+  }
+}
