@@ -1,6 +1,8 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: blue;
+  background-image: url(images/bg-intro-desktop.png);
+  background-color: Red;
+  background-color: hsl(0, 100%, 74%, 0.9);
 }
 
 .half {
@@ -12,12 +14,21 @@ body {
   width: 350px;
   margin: 0 auto;
   padding-top: 150px;
+  color: white;
 }
 
 .right {
   width: 400px;
   margin: 0 auto;
-  padding-top: 150px;
+  padding-top: 110px;
+}
+
+.right-box {
+  background-color: white;
+  margin: 15px 0;
+  border-radius: 5px;
+  padding: 10px 0;
+  box-shadow: 0 5px 0 #ff6666;
 }
 
 .blue-box {
@@ -26,9 +37,10 @@ body {
   background: hsl(248, 32%, 49%);
   text-align: center;
   margin: auto;
-  width: 80%;
+  width: 100%;
   padding: 1px 0 1px 0;
   border-radius: 5px;
+  box-shadow: 0 5px 0 #ff6666;
 }
 
 p {
@@ -36,10 +48,59 @@ p {
 }
 
 .form {
-  background-color: white;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+
+input {
+  text-align: left;
+  width: 80%;
+  margin: 5px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid lightgrey 1px;
+  font-weight: bold;
+  color: #777777;
+  font-size: 0.6rem;
+}
+
+.inputs {
+  padding-left: 20px;
+}
+
+button {
+  background: green;
+  background: hsl(154, 59%, 51%);
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+
+.terms {
+  font-size: 0.5rem;
+  text-align: center;
+  color: lightgray;
+  color: hsl(246, 25%, 77%);
+}
+
+a {
+  color: Red;
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
 }
 
 @media screen and (max-width: 700px) {
+  body {
+    background-image: url(images/bg-intro-mobile.png);
+  }
+
   .half {
     width: 100%;
   }
@@ -56,5 +117,12 @@ p {
 
   .right {
     padding-top: 0;
+    margin: 0 auto;
+    position: relative;
+    width: 250px;
+  }
+
+  .blue-box {
+    width: 200px;
   }
 }
